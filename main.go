@@ -26,3 +26,7 @@ func GetIPFromAddr(addr string) *net.IP {
 	}
 	return &tcpAddr.IP
 }
+
+func RemoteAddr(c net.Conn) string {
+	return c.RemoteAddr().(*net.TCPAddr).IP.String()
+}
