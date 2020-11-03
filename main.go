@@ -27,6 +27,7 @@ func GetIPFromAddr(addr string) *net.IP {
 	return &tcpAddr.IP
 }
 
+// RemoteAddr returns IP string from a net.Conn
 func RemoteAddr(c net.Conn) string {
 	return c.RemoteAddr().(*net.TCPAddr).IP.String()
 }
