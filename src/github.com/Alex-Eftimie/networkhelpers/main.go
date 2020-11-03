@@ -1,4 +1,4 @@
-package main
+package networkhelpers
 
 import (
 	"log"
